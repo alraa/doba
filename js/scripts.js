@@ -39,21 +39,37 @@ $(document).ready(function(){
 	//--
 	
 	
-	/* show advanced search */
+	/* advansed search */
+	$(document)[clickEvent]( function(event){
+		if( $(event.target).closest(".b-search__form").length ) 
+		return;
+		$('#adv-search').slideUp(600);
+		$('.b-form-adv-search-link').parents('.b-search__form').removeClass('b-search-active');
+		setTimeout(function(){
+			$('.b-form-adv-search-link').css('visibility', 'visible');
+		}, 400);
+		event.stopPropagation();
+	});
 	$('.b-form-adv-search-link')[clickEvent](function(){
-		
-		$('#adv-search').fadeIn(800);
+		$('#adv-search').slideDown(600);
 		$(this).css('visibility', 'hidden').parents('.b-search__form').addClass('b-search-active');
 		return false;
-		
+	});
+	$('.close-search-link')[clickEvent](function(){
+		$('#adv-search').slideUp(600);
+		$('.b-form-adv-search-link').parents('.b-search__form').removeClass('b-search-active');
+		setTimeout(function(){
+			$('.b-form-adv-search-link').css('visibility', 'visible');
+		}, 400);
+		return false;
 	});
 	//--
 	
 	
 	/* show more cities */
 	$('.b-button__show-more')[clickEvent](function(){
-		$(this).fadeOut(500);
-		$('.b-more-cities').slideDown(500);
+		$(this).text($(this).text() == 'Свернуть' ? 'Показать больше' : 'Свернуть');
+		$(this).parent().parent().find('.b-more-cities').slideToggle(500);
 		return false;
 	});
 	//--
@@ -174,7 +190,7 @@ $(document).ready(function(){
 	/* map (main page)*/
 	
 	/*### map All Ukraine ###*/
-	$("area[id*='pt_'], a[id*='city_link_']").hover(function () {
+	$("span[id*='pt_'], a[id*='city_link_']").hover(function () {
 		var num = this.id.split('city_link_')[1];
 		if(num == undefined) {num = this.id.split('pt_')[1];}
 		$('#active-map').removeClass().addClass('map_'+num+'_on');
@@ -196,7 +212,7 @@ $(document).ready(function(){
 	
 	/*### map Karpaty ###*/
 	var num2;
-	$("area[id*='pt_karp'], a[id*='city_link_karp']").hover(function () {
+	$("span[id*='pt_karp'], a[id*='city_link_karp']").hover(function () {
 		num2 = this.id.split('city_link_karp')[1];
 		if(num2 == undefined) {num2 = this.id.split('pt_karp')[1];}
 		$('.b-city__karp'+num2).css('display', 'inline-block');
@@ -207,7 +223,7 @@ $(document).ready(function(){
 	
 	/*### map Black sea ###*/
 	var num3;
-	$("area[id*='pt_blacksea'], a[id*='city_link_blacksea']").hover(function () {
+	$("span[id*='pt_blacksea'], a[id*='city_link_blacksea']").hover(function () {
 		num3 = this.id.split('city_link_blacksea')[1];
 		if(num3 == undefined) {num3 = this.id.split('pt_blacksea')[1];}
 		$('.b-city__blacksea'+num3).css('display', 'inline-block');
@@ -218,7 +234,7 @@ $(document).ready(function(){
 	
 	/*### map Azov sea ###*/
 	var num4;
-	$("area[id*='pt_azovsea'], a[id*='city_link_azovsea']").hover(function () {
+	$("span[id*='pt_azovsea'], a[id*='city_link_azovsea']").hover(function () {
 		num4 = this.id.split('city_link_azovsea')[1];
 		if(num4 == undefined) {num4 = this.id.split('pt_azovsea')[1];}
 		$('.b-city__azovsea'+num4).css('display', 'inline-block');
@@ -229,9 +245,9 @@ $(document).ready(function(){
 	
 	/*### map Krim ###*/
 	var num5;
-	$("area[id*='pt_krim'], a[id*='city_link_krim']").hover(function () {
-		num4 = this.id.split('city_link_azovsea')[1];
-		if(num4 == undefined) {num5 = this.id.split('pt_krim')[1];}
+	$("span[id*='pt_krim'], a[id*='city_link_krim']").hover(function () {
+		num5 = this.id.split('city_link_krim')[1];
+		if(num5 == undefined) {num5 = this.id.split('pt_krim')[1];}
 		$('.b-city__krim'+num5).css('display', 'inline-block');
 	}, function () {
 		$('.b-city__krim'+num5).css('display', 'none');

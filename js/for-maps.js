@@ -27,7 +27,7 @@ if ($('body').hasClass('map')) {
         });
         
         info_head = new google.maps.InfoWindow({
-            content: "<p><strong>г. Ивано-Франковск, ул. Гарбарская, 24</strong></p>"
+            content: "<p><strong>Москва, ул. Тверская, д.7</strong></p>"
         });
         google.maps.event.addListener(marker_head, 'click', function() {
             info_head.open(map, marker_head);

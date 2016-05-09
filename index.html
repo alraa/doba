@@ -61,7 +61,12 @@
                 	<input type="text" placeholder="Введите название города" class="b-input-wrap__input">
                 </div>
                 <div class="b-form__example">
-                  Например: <a href="#" class="b-example">Одесса</a>, <a href="#" class="b-example">Житомир</a>, <a href="#" class="b-example">Ровно</a>
+                  Например: 
+                  <span class="b-example-box"><a href="#" class="b-example">Киев</a><span>,</span></span>
+                  <span class="b-example-box"><a href="#" class="b-example">Львов</a><span>,</span></span>
+                  <span class="b-example-box"><a href="#" class="b-example">Одесса</a><span>,</span></span>
+                  <span class="b-example-box"><a href="#" class="b-example">Днепропетровск</a><span>,</span></span>
+                  <span class="b-example-box"><a href="#" class="b-example">Харьков</a></span>
                 </div>
               </div>
             </div>
@@ -127,6 +132,9 @@
               </div>
               <div class="clear"></div>
               
+              <a href="#" class="b-form-adv-search-link close-search-link">Закрыть</a>
+              <div class="clear"></div>
+              
             </div>
             
           </div>
@@ -189,109 +197,110 @@
               <div class="b-map b-map__all" onMouseOut="clearMap();">
                 <div id="active-map">
                   <div class="b-map__pointers">
+                  	
                     <img src="img/empty.png" alt="" usemap="#map" />
                     <map name="map" id="map">
                       
                       <!--### begin city pointers ###-->
                       
                       <!-- Kiev pointer -->
-                      <area shape="circle" coords="380,143,17" alt="" href="#" id="pt_1">
+                      <span id="pt_1" class="pt pt_1"></span>
                       <!-- /Kiev pointer -->
                       
                       <!-- Lvov pointer -->
-                      <area shape="circle" coords="90,184,13" alt=""  href="#" id="pt_2">
+                      <span id="pt_2" class="pt pt_2"></span>
                       <!-- /Lvov pointer -->
                       
                       <!-- Uzhgorod pointer -->
-                      <area shape="circle" coords="33,252,12" alt="" href="#" id="pt_3">
+                      <span id="pt_3" class="pt pt_3"></span>
                       <!-- /Uzhgorod pointer -->
                       
                       <!-- Lutsk pointer -->
-                      <area shape="circle" coords="146,122,13" alt="" href="#" id="pt_4">
+                      <span id="pt_4" class="pt pt_4"></span>
                       <!-- /Lutsk pointer -->
                       
                       <!-- Ivano-Frankovsk pointer -->
-                      <area shape="circle" coords="118,245,14" alt="" href="#" id="pt_5">
+                      <span id="pt_5" class="pt pt_5"></span>
                       <!-- /Ivano-Frankovsk pointer -->
                       
                       <!-- Ternopol pointer -->
-                      <area shape="circle" coords="158,207,13" alt="" href="#" id="pt_6">
+                      <span id="pt_6" class="pt pt_6"></span>
                       <!-- /Ternopol pointer -->
                       
                       <!-- Rovno pointer -->
-                      <area shape="circle" coords="187,133,15" alt="" href="#" id="pt_7">
+                      <span id="pt_7" class="pt pt_7"></span>
                       <!-- /Rovno pointer -->
                       
                       <!-- Chernovzy pointer -->
-                      <area shape="circle" coords="172,290,14" alt="" href="#" id="pt_8">
+                      <span id="pt_8" class="pt pt_8"></span>
                       <!-- /Chernovzy pointer -->
                       
                       <!-- Hmelnitskiy pointer -->
-                      <area shape="circle" coords="217,217,16" alt="" href="#" id="pt_9">
+                      <span id="pt_9" class="pt pt_9"></span>
                       <!-- /Hmelnitskiy pointer -->
                       
                       <!-- Vinniza pointer -->
-                      <area shape="circle" coords="290,228,13" alt="" href="#" id="pt_10">
+                       <span id="pt_10" class="pt pt_10"></span>
                       <!-- /Vinniza pointer -->
                       
                       <!-- Zhitomir pointer -->
-                      <area shape="circle" coords="296,159,14" alt="" href="#" id="pt_11">
+                      <span id="pt_11" class="pt pt_11"></span>
                       <!-- /Zhitomir pointer -->
                       
                       <!-- Odessa pointer -->
-                      <area shape="circle" coords="389,395,18" alt="" href="#" id="pt_12">
+                      <span id="pt_12" class="pt pt_12"></span>
                       <!-- /Odessa pointer -->
                       
                       <!-- Nikolaev pointer -->
-                      <area shape="circle" coords="457,376,17" alt="" href="#" id="pt_13">
+                      <span id="pt_13" class="pt pt_13"></span>
                       <!-- /Nikolaev pointer -->
                       
                       <!-- Kirovograd pointer -->
-                      <area shape="circle" coords="455,276,14" alt="" href="#" id="pt_14">
+                      <span id="pt_14" class="pt pt_14"></span>
                       <!-- /Kirovograd pointer -->
                       
                       <!-- Cherkasy pointer -->
-                      <area shape="circle" coords="424,204,15" alt="" href="#" id="pt_15">
+                      <span id="pt_15" class="pt pt_15"></span>
                       <!-- /Cherkasy pointer -->
                       
                       <!-- Chernigov pointer -->
-                      <area shape="circle" coords="406,69,16" alt="" href="#" id="pt_16">
+                      <span id="pt_16" class="pt pt_16"></span>
                       <!-- /Chernigov pointer -->
                       
                       <!-- Simferopol pointer -->
-                      <area shape="circle" coords="553,484,16" alt="" href="#" id="pt_17">
+                      <span id="pt_17" class="pt pt_17"></span>
                       <!-- /Simferopol pointer -->
                       
                       <!-- Herson pointer -->
-                      <area shape="circle" coords="490,400,16" alt="" href="#" id="pt_18">
+                      <span id="pt_18" class="pt pt_18"></span>
                       <!-- /Herson pointer -->
                       
                       <!-- Dnepropetrovsk pointer -->
-                      <area shape="circle" coords="592,265,16" alt="" href="#" id="pt_19">
+                      <span id="pt_19" class="pt pt_19"></span>
                       <!-- /Dnepropetrovsk pointer -->
                       
                       <!-- Poltava pointer -->
-                      <area shape="circle" coords="564,190,17" alt="" href="#" id="pt_20">
+                      <span id="pt_20" class="pt pt_20"></span>
                       <!-- /Poltava pointer -->
                       
                       <!-- Sumy pointer -->
-                      <area shape="circle" coords="564,96,15" alt="" href="#" id="pt_21">
+                      <span id="pt_21" class="pt pt_21"></span>
                       <!-- /Sumy pointer -->
                       
                       <!-- Zaporozhye pointer -->
-                      <area shape="circle" coords="606,309,14" alt="" href="#" id="pt_22">
+                      <span id="pt_22" class="pt pt_22"></span>
                       <!-- /Zaporozhye pointer -->
                       
                       <!-- Kharkov pointer -->
-                      <area shape="circle" coords="634,154,14" alt="" href="#" id="pt_23">
+                      <span id="pt_23" class="pt pt_23"></span>
                       <!-- /Kharkov pointer -->
                       
                       <!-- Donezk pointer -->
-                      <area shape="circle" coords="721,278,17" alt="" href="#" id="pt_24">
+                      <span id="pt_24" class="pt pt_24"></span>
                       <!-- /Donezk pointer -->
                       
                       <!-- Lugansk pointer -->
-                      <area shape="circle" coords="784,231,17" alt="" href="#" id="pt_25">
+                      <span id="pt_25" class="pt pt_25"></span>
                       <!-- /Lugansk pointer -->
                       
                       <!--### end city pointers ###-->
@@ -436,418 +445,9 @@
             </div>
             <!-- end map All -->
             
-          </div>
-          <!-- /All Ukraine -->
-          
-          
-          <!-- Karpaty -->
-          <div class="b-tabs-block__box">
-          	
-            <!-- begin regions info -->
-            <div class="b-regions__wrap">
-              <div class="b-regions__info">
-                <span class="b-info__icon1"></span>
-                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon2"></span>
-                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon3"></span>
-                <span class="b-info">100% модерация <br>всех квартир</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon4"></span>
-                <span class="b-info">Только реальные <br>отзывы</span>
-              </div> 
-            </div>
-            <!-- end regions info -->
             
-            <div class="b-map-wrap">
-            
-            	<h2>Выберите область</h2>
-              
-              <div class="b-map__region-descrip">
-              	<span class="b-region-descrip__head">Карпаты</span>
-                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
-                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
-бодрости и энергией на весь год! Карпаты идеально 
-подходят для ценителей природы и зимних видов спорта. 
-Этот регион Украины называют экологически чистым. 
-Сюда можно приезжать и полюбоваться на местные 
-красоты, и с целью подлечиться. </p>
-              </div>
-            
-            	<!-- begin map Karpaty -->
-              <div class="b-map b-map__karpaty">
-                <div id="active-map-karpaty">
-                  <div class="b-map__pointers b-map__pointers-karpaty">
-                    <img src="img/empty2.png" alt="" usemap="#map_karpaty" />
-                    <map name="map_karpaty">
-                    	
-                      <!--### begin city pointers Karpaty ###-->
-                      
-                      <!-- Skole pointer -->
-                      <area shape="circle" coords="239,140,17" alt="" href="#" id="pt_karp1">
-                      <!-- /Skole pointer -->
-                      <area shape="circle" coords="223,248,16" alt="" href="#" id="pt_karp2">
-                      <area shape="circle" coords="259,246,14" alt="" href="#" id="pt_karp3">
-                      <area shape="circle" coords="263,224,13" alt="" href="#" id="pt_karp4">
-                      
-                      <!--### end city pointers Karpaty ###-->
-                      
-                    </map>
-                  </div>
-                  
-                  <div class="b-map__cities">
-                  	<a href="#" class="b-city b-city__karp1" id="city_link_karp1">Сколе</a>
-                    <a href="#" class="b-city b-city__karp2" id="city_link_karp2">Сколе</a>
-                    <a href="#" class="b-city b-city__karp3" id="city_link_karp3">Сколе</a>
-                    <a href="#" class="b-city b-city__karp4" id="city_link_karp4">Сколе</a>
-                  </div>
-                  
-                </div>
-              </div>
-            	<!-- end map Karpaty -->
-            
-            </div>
-            
-          </div>
-          <!-- /Karpaty -->
-          
-          
-          <!-- Black sea -->
-          <div class="b-tabs-block__box">
-            
-            <!-- begin regions info -->
-            <div class="b-regions__wrap">
-            	<div class="b-regions__info">
-                <span class="b-info__icon2"></span>
-                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon1"></span>
-                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon4"></span>
-                <span class="b-info">Только реальные <br>отзывы</span>
-              </div> 
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon3"></span>
-                <span class="b-info">100% модерация <br>всех квартир</span>
-              </div>
-            </div>
-            <!-- end regions info -->
-            
-            <div class="b-map-wrap">
-            
-            	<h2>Выберите область</h2>
-              
-              <div class="b-map__region-descrip">
-              	<span class="b-region-descrip__head">Черное море</span>
-                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
-                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
-бодрости и энергией на весь год! Карпаты идеально 
-подходят для ценителей природы и зимних видов спорта. 
-Этот регион Украины называют экологически чистым. 
-Сюда можно приезжать и полюбоваться на местные 
-красоты, и с целью подлечиться. </p>
-              </div>
-            
-            	<!-- begin map Black -->
-              <div class="b-map b-map__blacksea">
-                <div id="active-map-blacksea">
-                  <div class="b-map__pointers b-map__pointers-blacksea">
-                    <img src="img/empty2.png" alt="" usemap="#map_blacksea" />
-                    <map name="map_blacksea">
-                      
-                      <!--### begin city pointers Black sea ###-->
-                      
-                      <!-- Odessa pointer -->
-                      <area shape="circle" coords="209,144,18" alt="" href="#" id="pt_blacksea1">
-                      <!-- /Odessa pointer -->
-                      <area shape="circle" coords="164,224,14" alt="" href="#" id="pt_blacksea2">
-                      <area shape="circle" coords="205,178,15" alt="" href="#" id="pt_blacksea3">
-                      <area shape="circle" coords="337,62,16" alt="" href="#" id="pt_blacksea4">
-                      <area shape="circle" coords="423,112,16" alt="" href="#" id="pt_blacksea5">
-                      <area shape="circle" coords="452,199,16" alt="" href="#" id="pt_blacksea6">
-                      
-                      <!--### end city pointers Black sea ###-->
-                      
-                    </map>
-                    
-                  </div>
-                  
-                  <div class="b-map__cities">
-                  	<a href="#" class="b-city b-city__blacksea1" id="city_link_blacksea1">Одесса</a>
-                    <a href="#" class="b-city b-city__blacksea2" id="city_link_blacksea2">Одесса</a>
-                    <a href="#" class="b-city b-city__blacksea3" id="city_link_blacksea3">Одесса</a>
-                    <a href="#" class="b-city b-city__blacksea4" id="city_link_blacksea4">Одесса</a>
-                    <a href="#" class="b-city b-city__blacksea5" id="city_link_blacksea5">Одесса</a>
-                    <a href="#" class="b-city b-city__blacksea6" id="city_link_blacksea6">Одесса</a>
-                  </div>
-                  
-                </div>
-              </div>
-            	<!-- end map Black -->
-            
-            </div>
-            
-          </div>
-          <!-- /Black sea -->
-          
-          
-          <!-- Azov sea -->
-          <div class="b-tabs-block__box">
-            
-            <!-- begin regions info -->
-            <div class="b-regions__wrap">
-            	<div class="b-regions__info">
-                <span class="b-info__icon2"></span>
-                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon1"></span>
-                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon4"></span>
-                <span class="b-info">Только реальные <br>отзывы</span>
-              </div> 
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon3"></span>
-                <span class="b-info">100% модерация <br>всех квартир</span>
-              </div>
-            </div>
-            <!-- end regions info -->
-            
-            <div class="b-map-wrap">
-            
-            	<h2>Выберите область</h2>
-              
-              <div class="b-map__region-descrip">
-              	<span class="b-region-descrip__head">Азовское море</span>
-                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
-                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
-бодрости и энергией на весь год! Карпаты идеально 
-подходят для ценителей природы и зимних видов спорта. 
-Этот регион Украины называют экологически чистым. 
-Сюда можно приезжать и полюбоваться на местные 
-красоты, и с целью подлечиться. </p>
-              </div>
-            
-            	<!-- begin map Azov -->
-              <div class="b-map b-map__azovsea">
-                <div id="active-map-azovsea">
-                  <div class="b-map__pointers b-map__pointers-azovsea">
-                    <img src="img/empty2.png" alt="" usemap="#map_azovsea" />
-                    <map name="map_azovsea">
-                    	
-                      <!--### begin city pointers Azov sea ###-->
-                      
-                      <!-- Primorsk pointer -->
-                      <area shape="circle" coords="277,167,22" alt="" href="#" id="pt_azovsea1">
-                      <!-- /Primorsk pointer -->
-                      <area shape="circle" coords="129,266,18" alt="" href="#" id="pt_azovsea2">
-                      <area shape="circle" coords="337,161,17" alt="" href="#" id="pt_azovsea3">
-                      <area shape="circle" coords="413,91,16" alt="" href="#" id="pt_azovsea4">
-                      
-                      <!--### end city pointers Azov sea ###-->
-                      
-                    </map>  
-                    
-                  </div>
-                  
-                  <div class="b-map__cities">
-                  	<a href="#" class="b-city b-city__azovsea1" id="city_link_azovsea1">Приморск</a>
-                    <a href="#" class="b-city b-city__azovsea2" id="city_link_azovsea2">Приморск</a>
-                    <a href="#" class="b-city b-city__azovsea3" id="city_link_azovsea3">Приморск</a>
-                    <a href="#" class="b-city b-city__azovsea4" id="city_link_azovsea4">Приморск</a>
-                  </div>
-                  
-                </div>
-              </div>
-            	<!-- end map Azov -->
-            
-            </div>
-            
-          </div>
-          <!-- /Azov sea -->
-          
-          
-          <!-- Krim -->
-          <div class="b-tabs-block__box">
-            
-            <!-- begin regions info -->
-            <div class="b-regions__wrap">
-            	<div class="b-regions__info">
-                <span class="b-info__icon2"></span>
-                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon1"></span>
-                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
-              </div>
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon4"></span>
-                <span class="b-info">Только реальные <br>отзывы</span>
-              </div> 
-              
-              <div class="b-regions__info">
-                <span class="b-info__icon3"></span>
-                <span class="b-info">100% модерация <br>всех квартир</span>
-              </div>
-            </div>
-            <!-- end regions info -->
-            
-            <div class="b-map-wrap">
-            
-            	<h2>Выберите область</h2>
-              
-              <div class="b-map__region-descrip">
-              	<span class="b-region-descrip__head">Крым</span>
-                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
-                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
-бодрости и энергией на весь год! Карпаты идеально 
-подходят для ценителей природы и зимних видов спорта. 
-Этот регион Украины называют экологически чистым. 
-Сюда можно приезжать и полюбоваться на местные 
-красоты, и с целью подлечиться. </p>
-              </div>
-            
-            	<!-- begin map Krim -->
-              <div class="b-map b-map__krim">
-                <div id="active-map-krim">
-                  <div class="b-map__pointers b-map__pointers-krim">
-                    <img src="img/empty2.png" alt="" usemap="#map_krim" />
-                    <map name="map_krim">
-                    	
-                      <!--### begin city pointers Krim ###-->
-                      
-                      <!-- Armyansk pointer -->
-                      <area shape="circle" coords="173,146,18" alt="" href="#" id="pt_krim1">
-                      <!-- /Armyansk pointer -->
-                      <area shape="circle" coords="127,286,16" alt="" href="#" id="pt_krim2">
-                      <area shape="circle" coords="155,295,15" alt="" href="#" id="pt_krim3">
-                      <area shape="circle" coords="217,320,19" alt="" href="#" id="pt_krim4">
-                      <area shape="circle" coords="148,384,15" alt="" href="#" id="pt_krim5">
-                      <area shape="circle" coords="173,421,16" alt="" href="#" id="pt_krim6">
-                      <area shape="circle" coords="198,420,11" alt="" href="#" id="pt_krim7">
-                      <area shape="circle" coords="217,410,10" alt="" href="#" id="pt_krim8">
-                      <area shape="circle" coords="229,399,9" alt="" href="#" id="pt_krim9">
-                      <area shape="circle" coords="240,392,8" alt="" href="#" id="pt_krim10">
-                      <area shape="circle" coords="245,369,9" alt="" href="#" id="pt_krim11">
-                      <area shape="circle" coords="314,331,12" alt="" href="#" id="pt_krim12">
-                      <area shape="circle" coords="343,312,12" alt="" href="#" id="pt_krim13">
-                      <area shape="circle" coords="354,292,11" alt="" href="#" id="pt_krim14">
-                      <area shape="circle" coords="399,243,14" alt="" href="#" id="pt_krim15">
-                      <area shape="circle" coords="474,254,15" alt="" href="#" id="pt_krim16">
-                      
-                      <!--### end city pointers Krim ###-->
-                      
-                    </map>   
-                    
-                  </div>
-                  
-                  <div class="b-map__cities">
-                  	<a href="#" class="b-city b-city__krim1" id="city_link_krim1">Армянск</a>
-                    <a href="#" class="b-city b-city__krim2" id="city_link_krim2">Армянск</a>
-                    <a href="#" class="b-city b-city__krim3" id="city_link_krim3">Армянск</a>
-                    <a href="#" class="b-city b-city__krim4" id="city_link_krim4">Армянск</a>
-                    <a href="#" class="b-city b-city__krim5" id="city_link_krim5">Армянск</a>
-                    <a href="#" class="b-city b-city__krim6" id="city_link_krim6">Армянск</a>
-                    <a href="#" class="b-city b-city__krim7" id="city_link_krim7">Армянск</a>
-                    <a href="#" class="b-city b-city__krim8" id="city_link_krim8">Армянск</a>
-                    <a href="#" class="b-city b-city__krim9" id="city_link_krim9">Армянск</a>
-                    <a href="#" class="b-city b-city__krim10" id="city_link_krim10">Армянск</a>
-                    <a href="#" class="b-city b-city__krim11" id="city_link_krim11">Армянск</a>
-                    <a href="#" class="b-city b-city__krim12" id="city_link_krim12">Армянск</a>
-                    <a href="#" class="b-city b-city__krim13" id="city_link_krim13">Армянск</a>
-                    <a href="#" class="b-city b-city__krim14" id="city_link_krim14">Армянск</a>
-                    <a href="#" class="b-city b-city__krim15" id="city_link_krim15">Армянск</a>
-                    <a href="#" class="b-city b-city__krim16" id="city_link_krim16">Армянск</a>
-                  </div>
-                  
-                </div>
-              </div>
-            	<!-- end map Krim -->
-            
-            </div>
-            
-          </div>
-          <!-- /Krim -->
-          
-        </div>
-        
-        <div class="b-page-wrap">
-          
-          <!-- begin cities -->
-          <div class="b-page__city-list">
-            <ul class="b-city-list">
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
-              </li>
-              <li class="b-city-list__item">
-                <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
-              </li>
-            </ul>
-            
-            <div class="b-more-cities">
+            <!-- begin cities -->
+            <div class="b-page__city-list">
               <ul class="b-city-list">
                 <li class="b-city-list__item">
                   <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
@@ -898,13 +498,850 @@
                   <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
                 </li>
               </ul>
+              
+              <div class="b-more-cities">
+                <ul class="b-city-list">
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            
+            <div class="b-but-center">
+              <a href="#" class="b-button__show-more">Показать больше</a>
+            </div>
+            <!-- end cities -->
+            
           </div>
+          <!-- /All Ukraine -->
           
-          <div class="b-but-center">
-            <a href="#" class="b-button__show-more">Показать больше</a>
+          
+          <!-- Karpaty -->
+          <div class="b-tabs-block__box">
+          	
+            <!-- begin regions info -->
+            <div class="b-regions__wrap">
+              <div class="b-regions__info">
+                <span class="b-info__icon1"></span>
+                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon2"></span>
+                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon3"></span>
+                <span class="b-info">100% модерация <br>всех квартир</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon4"></span>
+                <span class="b-info">Только реальные <br>отзывы</span>
+              </div> 
+            </div>
+            <!-- end regions info -->
+            
+            <div class="b-map-wrap">
+            
+            	<h2>Выберите область</h2>
+              
+              <div class="b-map__region-descrip">
+              	<span class="b-region-descrip__head">Карпаты</span>
+                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
+                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
+бодрости и энергией на весь год! Карпаты идеально 
+подходят для ценителей природы и зимних видов спорта. 
+Этот регион Украины называют экологически чистым. 
+Сюда можно приезжать и полюбоваться на местные 
+красоты, и с целью подлечиться. </p>
+              </div>
+            
+            	<!-- begin map Karpaty -->
+              <div class="b-map b-map__karpaty">
+                <div id="active-map-karpaty">
+                    	
+                  <!--### begin city pointers Karpaty ###-->
+                  
+                  <!-- Skole pointer -->
+                  <span class="pt1 pt_karp1" id="pt_karp1"></span>
+                  <!-- /Skole pointer -->
+                  
+                  <span class="pt pt_karp2" id="pt_karp2"></span>
+                  <span class="pt pt_karp3" id="pt_karp3"></span>
+                  <span class="pt pt_karp4" id="pt_karp4"></span>
+                  
+                  <!--### end city pointers Karpaty ###-->
+                  
+                  <div class="b-map__cities">
+                  	<a href="#" class="b-city b-city__karp1" id="city_link_karp1">Сколе</a>
+                    <a href="#" class="b-city b-city__karp2" id="city_link_karp2">Сколе</a>
+                    <a href="#" class="b-city b-city__karp3" id="city_link_karp3">Сколе</a>
+                    <a href="#" class="b-city b-city__karp4" id="city_link_karp4">Сколе</a>
+                  </div>
+                  
+                </div>
+              </div>
+            	<!-- end map Karpaty -->
+            
+            </div>
+            
+            <!-- begin cities -->
+            <div class="b-page__city-list">
+              <ul class="b-city-list">
+              	<li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                </li>
+              </ul>
+              
+              <div class="b-more-cities">
+                <ul class="b-city-list">
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="b-but-center">
+              <a href="#" class="b-button__show-more">Показать больше</a>
+            </div>
+            <!-- end cities -->
+            
           </div>
-          <!-- end cities -->
+          <!-- /Karpaty -->
+          
+          
+          <!-- Black sea -->
+          <div class="b-tabs-block__box">
+            
+            <!-- begin regions info -->
+            <div class="b-regions__wrap">
+            	<div class="b-regions__info">
+                <span class="b-info__icon2"></span>
+                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon1"></span>
+                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon4"></span>
+                <span class="b-info">Только реальные <br>отзывы</span>
+              </div> 
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon3"></span>
+                <span class="b-info">100% модерация <br>всех квартир</span>
+              </div>
+            </div>
+            <!-- end regions info -->
+            
+            <div class="b-map-wrap">
+            
+            	<h2>Выберите область</h2>
+              
+              <div class="b-map__region-descrip">
+              	<span class="b-region-descrip__head">Черное море</span>
+                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
+                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
+бодрости и энергией на весь год! Карпаты идеально 
+подходят для ценителей природы и зимних видов спорта. 
+Этот регион Украины называют экологически чистым. 
+Сюда можно приезжать и полюбоваться на местные 
+красоты, и с целью подлечиться. </p>
+              </div>
+            
+            	<!-- begin map Black -->
+              <div class="b-map b-map__blacksea">
+                <div id="active-map-blacksea">
+                      
+                  <!--### begin city pointers Black sea ###-->
+                  
+                  <!-- Odessa pointer -->
+                  <span class="pt1 pt_blacksea1" id="pt_blacksea1"></span>
+                  <!-- /Odessa pointer -->
+
+                  <span class="pt pt_blacksea2" id="pt_blacksea2"></span>
+                  <span class="pt pt_blacksea3" id="pt_blacksea3"></span>
+                  <span class="pt pt_blacksea4" id="pt_blacksea4"></span>
+                  <span class="pt pt_blacksea5" id="pt_blacksea5"></span>
+                  <span class="pt pt_blacksea6" id="pt_blacksea6"></span>
+                  
+                  <!--### end city pointers Black sea ###-->
+                  
+                  <div class="b-map__cities">
+                  	<a href="#" class="b-city b-city__blacksea1" id="city_link_blacksea1">Одесса</a>
+                    <a href="#" class="b-city b-city__blacksea2" id="city_link_blacksea2">Одесса</a>
+                    <a href="#" class="b-city b-city__blacksea3" id="city_link_blacksea3">Одесса</a>
+                    <a href="#" class="b-city b-city__blacksea4" id="city_link_blacksea4">Одесса</a>
+                    <a href="#" class="b-city b-city__blacksea5" id="city_link_blacksea5">Одесса</a>
+                    <a href="#" class="b-city b-city__blacksea6" id="city_link_blacksea6">Одесса</a>
+                  </div>
+                  
+                </div>
+              </div>
+            	<!-- end map Black -->
+            
+            </div>
+            
+            <!-- begin cities -->
+            <div class="b-page__city-list">
+              <ul class="b-city-list">
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                </li>
+              </ul>
+              
+              <div class="b-more-cities">
+                <ul class="b-city-list">
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="b-but-center">
+              <a href="#" class="b-button__show-more">Показать больше</a>
+            </div>
+            <!-- end cities -->
+            
+          </div>
+          <!-- /Black sea -->
+          
+          
+          <!-- Azov sea -->
+          <div class="b-tabs-block__box">
+            
+            <!-- begin regions info -->
+            <div class="b-regions__wrap">
+            	<div class="b-regions__info">
+                <span class="b-info__icon2"></span>
+                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon1"></span>
+                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon4"></span>
+                <span class="b-info">Только реальные <br>отзывы</span>
+              </div> 
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon3"></span>
+                <span class="b-info">100% модерация <br>всех квартир</span>
+              </div>
+            </div>
+            <!-- end regions info -->
+            
+            <div class="b-map-wrap">
+            
+            	<h2>Выберите область</h2>
+              
+              <div class="b-map__region-descrip">
+              	<span class="b-region-descrip__head">Азовское море</span>
+                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
+                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
+бодрости и энергией на весь год! Карпаты идеально 
+подходят для ценителей природы и зимних видов спорта. 
+Этот регион Украины называют экологически чистым. 
+Сюда можно приезжать и полюбоваться на местные 
+красоты, и с целью подлечиться. </p>
+              </div>
+            
+            	<!-- begin map Azov -->
+              <div class="b-map b-map__azovsea">
+                <div id="active-map-azovsea">
+                    	
+                  <!--### begin city pointers Azov sea ###-->
+                  
+                  <!-- Primorsk pointer -->
+                  <span class="pt1 pt_azovsea1" id="pt_azovsea1"></span>
+                  <!-- /Primorsk pointer -->
+                  
+                  <span class="pt pt_azovsea2" id="pt_azovsea2"></span>
+                  <span class="pt pt_azovsea3" id="pt_azovsea3"></span>
+                  <span class="pt pt_azovsea4" id="pt_azovsea4"></span>
+                  
+                  <!--### end city pointers Azov sea ###-->
+                  
+                  <div class="b-map__cities">
+                  	<a href="#" class="b-city b-city__azovsea1" id="city_link_azovsea1">Приморск</a>
+                    <a href="#" class="b-city b-city__azovsea2" id="city_link_azovsea2">Приморск</a>
+                    <a href="#" class="b-city b-city__azovsea3" id="city_link_azovsea3">Приморск</a>
+                    <a href="#" class="b-city b-city__azovsea4" id="city_link_azovsea4">Приморск</a>
+                  </div>
+                  
+                </div>
+              </div>
+            	<!-- end map Azov -->
+            
+            </div>
+            
+            <!-- begin cities -->
+            <div class="b-page__city-list">
+              <ul class="b-city-list">
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                </li>
+              </ul>
+              
+              <div class="b-more-cities">
+                <ul class="b-city-list">
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="b-but-center">
+              <a href="#" class="b-button__show-more">Показать больше</a>
+            </div>
+            <!-- end cities -->
+            
+          </div>
+          <!-- /Azov sea -->
+          
+          
+          <!-- Krim -->
+          <div class="b-tabs-block__box">
+            
+            <!-- begin regions info -->
+            <div class="b-regions__wrap">
+            	<div class="b-regions__info">
+                <span class="b-info__icon2"></span>
+                <span class="b-info">Прямые контакты <br>владельцев жилья</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon1"></span>
+                <span class="b-info">Более 5000 квартир <br>по всей Украине</span>
+              </div>
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon4"></span>
+                <span class="b-info">Только реальные <br>отзывы</span>
+              </div> 
+              
+              <div class="b-regions__info">
+                <span class="b-info__icon3"></span>
+                <span class="b-info">100% модерация <br>всех квартир</span>
+              </div>
+            </div>
+            <!-- end regions info -->
+            
+            <div class="b-map-wrap">
+            
+            	<h2>Выберите область</h2>
+              
+              <div class="b-map__region-descrip">
+              	<span class="b-region-descrip__head">Крым</span>
+                <span class="b-region-descrip__flats"><strong class="b-flats">250</strong> квартир</span>
+                <p class="b-region-descrip">Отдых в Карпатах - заряд положительных эмоций, 
+бодрости и энергией на весь год! Карпаты идеально 
+подходят для ценителей природы и зимних видов спорта. 
+Этот регион Украины называют экологически чистым. 
+Сюда можно приезжать и полюбоваться на местные 
+красоты, и с целью подлечиться. </p>
+              </div>
+            
+            	<!-- begin map Krim -->
+              <div class="b-map b-map__krim">
+                <div id="active-map-krim">
+                    	
+                  <!--### begin city pointers Krim ###-->
+                  
+                  <!-- Armyansk pointer -->
+                  <span class="pt pt_krim1" id="pt_krim1"></span>
+                  <!-- /Armyansk pointer -->
+                  
+                  <span class="pt pt_krim2" id="pt_krim2"></span>
+                  <span class="pt pt_krim3" id="pt_krim3"></span>
+                  <span class="pt1 pt_krim4" id="pt_krim4"></span>
+                  <span class="pt pt_krim5" id="pt_krim5"></span>
+                  <span class="pt pt_krim6" id="pt_krim6"></span>
+                  <span class="pt pt_krim7" id="pt_krim7"></span>
+                  <span class="pt pt_krim8" id="pt_krim8"></span>
+                  <span class="pt pt_krim9" id="pt_krim9"></span>
+                  <span class="pt pt_krim10" id="pt_krim10"></span>
+                  <span class="pt pt_krim11" id="pt_krim11"></span>
+                  <span class="pt pt_krim12" id="pt_krim12"></span>
+                  <span class="pt pt_krim13" id="pt_krim13"></span>
+                  <span class="pt pt_krim14" id="pt_krim14"></span>
+                  <span class="pt pt_krim15" id="pt_krim15"></span>
+                  <span class="pt pt_krim16" id="pt_krim16"></span>
+                  
+                  <!--### end city pointers Krim ###-->
+                  
+                  <div class="b-map__cities">
+                  	<a href="#" class="b-city b-city__krim1" id="city_link_krim1">Армянск</a>
+                    <a href="#" class="b-city b-city__krim2" id="city_link_krim2">Армянск</a>
+                    <a href="#" class="b-city b-city__krim3" id="city_link_krim3">Армянск</a>
+                    <a href="#" class="b-city b-city__krim4" id="city_link_krim4">Армянск</a>
+                    <a href="#" class="b-city b-city__krim5" id="city_link_krim5">Армянск</a>
+                    <a href="#" class="b-city b-city__krim6" id="city_link_krim6">Армянск</a>
+                    <a href="#" class="b-city b-city__krim7" id="city_link_krim7">Армянск</a>
+                    <a href="#" class="b-city b-city__krim8" id="city_link_krim8">Армянск</a>
+                    <a href="#" class="b-city b-city__krim9" id="city_link_krim9">Армянск</a>
+                    <a href="#" class="b-city b-city__krim10" id="city_link_krim10">Армянск</a>
+                    <a href="#" class="b-city b-city__krim11" id="city_link_krim11">Армянск</a>
+                    <a href="#" class="b-city b-city__krim12" id="city_link_krim12">Армянск</a>
+                    <a href="#" class="b-city b-city__krim13" id="city_link_krim13">Армянск</a>
+                    <a href="#" class="b-city b-city__krim14" id="city_link_krim14">Армянск</a>
+                    <a href="#" class="b-city b-city__krim15" id="city_link_krim15">Армянск</a>
+                    <a href="#" class="b-city b-city__krim16" id="city_link_krim16">Армянск</a>
+                  </div>
+                  
+                </div>
+              </div>
+            	<!-- end map Krim -->
+            
+            </div>
+            
+            <!-- begin cities -->
+            <div class="b-page__city-list">
+              <ul class="b-city-list">
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                </li>
+                <li class="b-city-list__item">
+                  <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                </li>
+              </ul>
+              
+              <div class="b-more-cities">
+                <ul class="b-city-list">
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Днепропетровск</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Донецк</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Житомир</span>235 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Киев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Кировоград</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Луганск</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Николаев</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Одесса</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Полтава</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Сумы</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Тернополь</span>145 квартир</a>
+                  </li>
+                  <li class="b-city-list__item">
+                    <a href="#" class="b-city-list__link"><span class="b-city-list__city">Ужгород</span>145 квартир</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="b-but-center">
+              <a href="#" class="b-button__show-more">Показать больше</a>
+            </div>
+            <!-- end cities -->
+            
+          </div>
+          <!-- /Krim -->
+          
+        </div>
+        
+        <div class="b-page-wrap">
+          
+          
           
           <!-- begin regions info -->
           <div class="b-regions__wrap b-regions__mob">
