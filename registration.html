@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+  <meta name = "format-detection" content = "telephone=no" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="HandheldFriendly" content="true">
+  <title>Doba - Регистрация</title>
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <!--[if lte IE 8]>
+    <link href= "css/ie8.css" rel= "stylesheet" media= "all" />
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="js/jquery.backgroundSize.js"></script>
+    <script src="js/ie8.js"></script>
+    <script src="js/placeholders.min.js"></script>
+    <script src="js/placeholders.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div class="b-page">
+  
+  <!-- begin header -->
+  <header class="b-header">
+  	<div class="b-page-wrap">
+  		<a href="#" class="b-header__logo"></a>
+      <a href="#" class="b-button b-header__button" title="Сдать жилье">Сдать жилье</a>
+      <a href="#" class="b-header__reg" title="Регистрация" data-reveal-id="registrationModal" data-animation="fade" onClick="checkModalPos('registrationModal');">Регистрация</a>
+      <a href="#" class="b-header__enter" title="Вход" data-reveal-id="loginModal" data-animation="fade" onClick="checkModalPos('loginModal');">Вход</a>
+      <div class="b-header__select">
+        <select class="custom" id="language" name="language">
+          <option value="russian">Русский</option>
+          <option value="ukrainian">Украинский</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </header>
+  <!-- end header -->  
+  
+  
+  <!-- begin registration top content -->
+  <div class="b-reg-content-top">
+  	<div class="b-page-wrap b-page-wrap__mob">
+      
+      <!-- begin registration info -->
+      <div class="b-reg-info">
+      	<div class="b-reg-info__bg"></div>
+        
+        <div class="b-reg-info__box-info">
+        	<span class="b-box-info__icon1"></span>
+          <span class="b-box-info__headline">Только реальные отзывы</span>
+          <span>Посуточно, почасово, 1к. квартира ул. Героев Днепра, 25. От метро 
+Героев Днепра 5 минут , уютная, аккуратная квартира после </span>
+        </div>
+        
+        <div class="b-reg-info__box-info">
+        	<span class="b-box-info__icon2"></span>
+          <span class="b-box-info__headline">Более 5000 квартир по всей Украине</span>
+          <span>Посуточно, почасово, 1к. квартира ул. Героев Днепра, 25. От метро 
+Героев Днепра 5 минут , уютная, аккуратная квартира после </span>
+        </div>
+        
+        <div class="b-reg-info__box-info">
+        	<span class="b-box-info__icon3"></span>
+          <span class="b-box-info__headline">Прямые контакты владельцев жилья</span>
+          <span>Посуточно, почасово, 1к. квартира ул. Героев Днепра, 25. От метро 
+Героев Днепра 5 минут , уютная, аккуратная квартира после </span>
+        </div>
+        
+        <div class="b-reg-info__box-info">
+        	<span class="b-box-info__icon4"></span>
+          <span class="b-box-info__headline">100% модерация всех квартир</span>
+          <span>Посуточно, почасово, 1к. квартира ул. Героев Днепра, 25. От метро 
+Героев Днепра 5 минут , уютная, аккуратная квартира после </span>
+        </div>
+        
+      </div>
+      <!-- end registration info -->
+      
+      <!-- begin registration form -->
+      <div class="b-reg-form-box">
+      	<div class="b-reg-contact-us">
+        	<div class="b-contact-us">
+        		<span class="b-contact-us__icon"></span>
+        		<span class="b-contact-us__text">Нужна помощь листинг вашей собственности? <br>
+          	<a href="#" title="Напишите нам" class="b-a-link">Напишите нам</a>  <span class="b-contact-us__call">Или позвоните <strong class="b-contact-us__phone">1-877-226-3657</strong></span></span>
+          </div>
+        </div>
+        <h2 class="b-content-headline">Начние свой бизнес <br>вместе с нами</h2>
+        
+        <form action="#" method="post" class="b-form b-form__reg-form">
+        	<fieldset>
+          	
+            <label class="b-form__label b-form__label-block" for="your_name_reg2">Имя, фамилия</label>
+            <div class="b-form__input b-form__input-block"><input type="text" class="b-input" id="your_name_reg2"></div>
+            <div class="clear"></div>
+            
+            <label class="b-form__label b-form__label-block" for="your_mail_reg2">E-mail</label>
+            <div class="b-form__input b-form__input-block"><input type="text" class="b-input" id="your_mail_reg2"></div>
+            <div class="clear"></div>
+            
+            <label class="b-form__label b-form__label-block" for="your_city_reg2">Ваш город</label>
+            <div class="b-dropbox b-dropbox__reg">
+              <select class="custom" id="your_city_reg2" name="your_city_reg2">
+                <option value="1">Киев</option>
+                <option value="2">Харьков</option>
+                <option value="3">Львов</option>
+              </select>
+            </div>
+            
+            <label class="b-form__label b-form__label-block" for="your_phone_reg2">Телефон</label>
+            <div class="b-form__input b-form__input-block"><input type="text" class="b-input" id="your_phone_reg2"></div>
+            <div class="clear"></div>
+            
+            <label for="terms_agree" class="check-label b-form__check b-form__agree2"><input type="checkbox" name="terms_agree" id="terms_agree" value="1" checked />Я принимаю <a href="#" class="b-a-link2">Условия</a></label>
+            
+            <input type="button" value="Зарегистрироваться" class="b-button__yellow b-button__yellow-reg">
+            
+          </fieldset>
+        </form>
+                
+      </div>
+      <!-- end registration form -->
+      
+      <div class="clear"></div>
+    
+    </div> 
+  </div> 
+  <!-- end registration top content -->
+      
+  <!-- begin preferences -->
+  <div class="b-page-wrap">
+    <div class="b-page-preferences">
+    
+      <h2 class="b-page-preferences__headline">Какие преимущества <br>вы получите работая с нами</h2>
+      
+      <div class="b-preferences">
+        <span class="b-preferences__pref1"></span>
+        <span class="b-preferences__descrip">Листинг страницу с название, описание, отзывы <br> 
+и фотографии, чтобы привлечь туристов в вашем аренда на отпуск</span>
+      </div>
+      
+      <div class="b-preferences">
+        <span class="b-preferences__pref2"></span>
+        <span class="b-preferences__descrip">Бронирование он-лайн и менеджер оговорка <br>
+прозрачно управлять гостей платежи</span>
+      </div>
+      
+      <div class="b-preferences">
+        <span class="b-preferences__pref3"></span>
+        <span class="b-preferences__descrip">Приборная панель для управления своими <br>
+данными календаря и оговорки</span>
+      </div>
+      
+      <div class="b-preferences">
+        <span class="b-preferences__pref4"></span>
+        <span class="b-preferences__descrip">Мобильное приложение для <br>
+управления листинг на ходу</span>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end preferences -->
+      
+  <!-- begin registration text -->
+  <div class="b-page-reg-text">
+    <div class="b-page-wrap b-page-wrap__mob">
+      
+      <div class="b-reg-text__left">
+      	<div class="b-left-text">
+          <span class="b-text__left-connect">Присоединяйся
+  к тысячам 
+  счастливых 
+  владельцев 
+  на Doba.ua</span>
+          <em class="b-text__left-text">"Я начал аренде мою собственность на Doba.ua 
+  в 2009, и я люблю его! Мы полны в среднем 95% 
+  времени, и наши гости со всего мира всегда было 
+  удивительно. Каждый из них имеет особый 
+  рассказать" </em>
+          <strong class="b-text__left-name">Бритта</strong>
+        </div>
+      </div>
+      <div class="b-reg-text__right b-reg-text__right-img"><img src="img/registration_img1.jpg" alt="" class="b-right__img"></div>
+      <div class="clear"></div>
+      
+      <div class="b-reg-text__right">
+      	<div class="b-right-text">
+      		<em class="b-text__left-text">"Я мог бы продолжать, но я хочу быть кратким. 
+Я новичок в этом аренда на отпуск вещи, и начали 
+продавать с HomeAway. Ну в 6 дней я имел 85 
+просмотров, 7 запросов и три заказы-брони равные 
+более $ 10000 (и мой место даже не оформлены!) " </em>
+      		<strong class="b-text__left-name">Патрик</strong>
+        </div>
+      </div>
+      <div class="b-reg-text__left b-reg-text__left-img"><img src="img/registration_img2.jpg" alt="" class="b-left__img"></div>
+      <div class="clear"></div>
+      
+      <div class="b-reg-text__left">
+      	<div class="b-left-text">
+          <em class="b-text__left-text">"Я начал аренде мою собственность на Doba.ua 
+в 2009, и я люблю его! Мы полны в среднем 95% 
+времени, и наши гости со всего мира всегда было 
+удивительно. Каждый из них имеет особый 
+рассказать" </em>
+          <strong class="b-text__left-name">Бритта</strong>
+        </div>
+      </div>
+      <div class="b-reg-text__right b-reg-text__right-img2"><img src="img/registration_img3.jpg" alt="" class="b-right__img2"></div>
+      <div class="clear"></div>
+      
+    </div>
+  </div>
+  <!-- end registration text -->
+  
+  <!-- begin FAQ -->
+  <div class="b-page-faq">
+  	<div class="b-page-wrap">
+    
+    	<h2>Часто задаваемые вопросы</h2>
+      
+      <ul class="b-faq">
+      	<li class="b-faq__list">
+        	<span class="b-faq__ask">Сейчас HomeAway?</span>
+          <div class="b-faq__answer"><strong>doba.ua</strong> - всеукраинский сайт, специализация которого - посуточная аренда квартир и домов. 
+Здесь Вы можете найти и забронировать любые заинтересовавшие Вас квартиры посуточно 
+в любом уголке Украины. При этом аренда квартир посуточно происходит непосредственно 
+у хозяина, а снять квартиру на сутки можно без оплаты комиссионных. </div>
+        </li>
+        <li class="b-faq__list">
+        	<span class="b-faq__ask">Почему я должен перечислить свою собственность на HomeAway?</span>
+          <div class="b-faq__answer"><strong>doba.ua</strong> - всеукраинский сайт, специализация которого - посуточная аренда квартир и домов. 
+Здесь Вы можете найти и забронировать любые заинтересовавшие Вас квартиры посуточно 
+в любом уголке Украины. При этом аренда квартир посуточно происходит непосредственно 
+у хозяина, а снять квартиру на сутки можно без оплаты комиссионных. </div>
+        </li>
+        <li class="b-faq__list">
+        	<span class="b-faq__ask">Что я получу с моим списке?</span>
+          <div class="b-faq__answer"><strong>doba.ua</strong> - всеукраинский сайт, специализация которого - посуточная аренда квартир и домов. 
+Здесь Вы можете найти и забронировать любые заинтересовавшие Вас квартиры посуточно 
+в любом уголке Украины. При этом аренда квартир посуточно происходит непосредственно 
+у хозяина, а снять квартиру на сутки можно без оплаты комиссионных. </div>
+        </li>
+        <li class="b-faq__list">
+        	<span class="b-faq__ask">Могу ли я контролировать, кто сдает свой дом?</span>
+          <div class="b-faq__answer"><strong>doba.ua</strong> - всеукраинский сайт, специализация которого - посуточная аренда квартир и домов. 
+Здесь Вы можете найти и забронировать любые заинтересовавшие Вас квартиры посуточно 
+в любом уголке Украины. При этом аренда квартир посуточно происходит непосредственно 
+у хозяина, а снять квартиру на сутки можно без оплаты комиссионных. </div>
+        </li>
+        <li class="b-faq__list">
+        	<span class="b-faq__ask">Какие типы свойств я могу рекламировать?</span>
+          <div class="b-faq__answer"><strong>doba.ua</strong> - всеукраинский сайт, специализация которого - посуточная аренда квартир и домов. 
+Здесь Вы можете найти и забронировать любые заинтересовавшие Вас квартиры посуточно 
+в любом уголке Украины. При этом аренда квартир посуточно происходит непосредственно 
+у хозяина, а снять квартиру на сутки можно без оплаты комиссионных. </div>
+        </li>
+      </ul>
+      
+      <div class="b-but-center2"><input type="button" value="Зарегистрироваться" class="b-button__yellow b-button__yellow-reg"></div>
+    
+    </div>
+  </div>
+  <!-- end FAQ -->
+  
+  <!-- begin call me button (for mobile only) -->
+  <div class="b-call-me-button">
+  	<div class="b-call-me-icon"></div>
+  </div>
+  <div class="b-call-me-button__call-links" id="call_button">
+    <div class="b-call-links">
+      <span class="b-call-links__phone">Номер телефона <br>067 950 34 34</span>
+      <a href="#" class="b-call-links__link">Позвонить</a>
+      <a href="#" class="b-call-links__link">Отправить sms</a>
+      <a href="#" class="b-call-links__link">Скопировать номер</a>
+      <a href="#" class="b-call-links__link">Создать контакт</a>
+    </div>
+    <div class="b-call-links-cancel">
+      <a href="#" class="b-call-links__link b-call-links__link-cancel">Отмена</a>
+    </div>
+  </div>
+  <!-- end call me button (for mobile only) -->
+  
+	
+  <div class="b-page__push"></div>
+</div>
+
+
+<!-- begin footer -->
+<footer class="b-footer">
+	<div class="b-page-wrap">
+  	<ul class="b-footer__foot-nav">
+    	<li class="b-foot-nav"><a href="#" class="b-foot-nav__link" title="Главная страница">Главная страница</a></li>
+      <li class="b-foot-nav"><a href="#" class="b-foot-nav__link" title="О нас">О нас</a></li>
+      <li class="b-foot-nav"><a href="#" class="b-foot-nav__link" title="Правила и условия">Правила и условия</a></li>
+      <li class="b-foot-nav"><a href="#" class="b-foot-nav__link" title="Статьи">Статьи</a></li>
+      <li class="b-foot-nav"><a href="#" class="b-foot-nav__link" title="Наши контакты">Наши контакты</a></li>
+      <li class="b-foot-nav"><a href="#" class="b-foot-nav__link" title="Карта сайта">Карта сайта</a></li>
+    </ul>
+    <span class="b-footer__copy">Copyright &copy; 2016 Doba.ua. All rights reserved.</span>
+    <div class="clear"></div>
+  </div>
+</footer>
+<!-- end footer -->
+
+
+<!-- begin log in modal -->
+<div id="loginModal" class="reveal-modal">
+  <a href="javascript:void(0);" class="close-reveal-modal close"></a>
+  <div class="modal_content">
+  	<h4>Вход</h4>
+		
+    <form action="#" method="post" class="b-modal-form">
+    	<fieldset>
+        
+        <label class="b-form__label b-form__label-modal" for="your_mail_login">E-mail</label>
+        <div class="b-form__input b-form__input-modal"><input type="text" class="b-input" id="your_mail_login"></div>
+        
+        <label class="b-form__label b-form__label-modal" for="your_pass_login">Пароль</label>
+        <div class="b-form__input b-form__input-modal b-form__input-error">
+        	<input type="password" class="b-input b-input__error" id="your_pass_login" value="212132">
+          <span class="b-form__error-text">ошибка ввода</span>
+        </div>
+        
+        <div class="b-form__login-social">
+        	<label class="b-form__label b-form__label-modal">Войти через</label>
+          <div class="b-form-social">
+            <a href="#" title="Поделиться" class="b-button__social b-button__social-modal b-button__social-vk">Поделиться</a>
+            <a href="#" title="Поделиться" class="b-button__social b-button__social-modal b-button__social-fb">Поделиться</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+        
+        <div class="b-form-button">
+        	<input type="submit" value="Войти" class="b-button b-button__login-modal">
+        </div>
+        <div class="b-form-remember">
+        	<label for="remember_me" class="check-label b-form__check b-form__remember"><input type="checkbox" name="remember_me" id="remember_me" value="1" checked />Запомнить меня</label>
+        	
+          <a href="#" title="Забыли пароль?" class="b-a-link">Забыли пароль?</a>
+        </div>
+        <div class="clear"></div>
+        
+      </fieldset>
+    </form>
+    
+  </div>
+</div>
+<!-- end log in modal -->
+
+<!-- begin registration modal -->
+<div id="registrationModal" class="reveal-modal">
+  <a href="javascript:void(0);" class="close-reveal-modal close"></a>
+  <div class="modal_content">
+  	<h4>Регистрация</h4>
+		
+    <form action="#" method="post" class="b-modal-form">
+    	<fieldset>
+        
+        <label class="b-form__label b-form__label-modal" for="your_name_reg">Имя:</label>
+        <div class="b-form__input b-form__input-modal"><input type="text" class="b-input" id="your_name_reg"></div>
+        
+        <label class="b-form__label b-form__label-modal" for="your_mail_reg">E-mail:</label>
+        <div class="b-form__input b-form__input-modal"><input type="text" class="b-input" id="your_mail_reg"></div>
+        
+        <label class="b-form__label b-form__label-modal" for="your_phone_reg">Телефон:</label>
+        <div class="b-form__input b-form__input-modal"><input type="text" class="b-input" id="your_phone_reg"></div>
+        
+        <label class="b-form__label b-form__label-modal" for="your_city_reg">Ваш город:</label>
+        <div class="b-dropbox">
+          <select class="custom" id="your_city_reg" name="your_city_reg">
+            <option value="1">Киев</option>
+            <option value="2">Харьков</option>
+            <option value="3">Львов</option>
+          </select>
+        </div>
+        
+        <div class="b-form__login-social">
+        	<label class="b-form__label b-form__label-modal b-form__label-modal-reg">Регистрация через</label>
+          <div class="b-form-social b-form-social__reg">
+            <a href="#" title="Поделиться" class="b-button__social b-button__social-modal b-button__social-vk">Поделиться</a>
+            <a href="#" title="Поделиться" class="b-button__social b-button__social-modal b-button__social-fb">Поделиться</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+        
+        <div class="b-form-agree">
+        	<label for="terms_agree_reg" class="check-label b-form__check b-form__agree"><input type="checkbox" name="terms_agree_reg" id="terms_agree_reg" value="1" checked />Я согласен с <a href="#" class="b-a-link">условиями</a></label>
+        </div>
+        <div class="b-form-button b-form-button__reg">
+        	<input type="submit" value="Зарегистрироваться" class="b-button b-button__reg-modal">
+        </div>
+        <div class="clear"></div>
+        
+      </fieldset>
+    </form>
+    
+  </div>
+</div>
+<!-- end registration modal -->
+
+
+
+<script type="text/javascript" src="js/modernizr.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/SelectBox.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/jquery.checkbox.radio.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jScrollPane.js"></script>
+<script type="text/javascript" src="js/mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script> 
+<script type="text/javascript" src="js/scripts.js"></script>
+
+
+</body>
+</html>
